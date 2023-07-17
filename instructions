@@ -1,0 +1,7 @@
+locate your disk using:
+  $ sudo fdisk -l 
+  $ sudo wipefs --all /dev/sdb   --> how about sda
+  $ sudo cfdisk /dev/sdb    
+      ->dos -> New -> Enter -> Enter -> Primary -> Yes -> Write -> Enter -> Type 'yes' -> Quit
+  $ sudo mkfs.vfat -n 'LUS' -I /dev/sdb
+  
